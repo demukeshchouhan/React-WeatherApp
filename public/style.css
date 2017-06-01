@@ -1,0 +1,24 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css);body {
+  background: #e9f3f7;
+  font-family: "Raleway"; }
+
+.container {
+  max-width: 996px;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto; }
+
+.languages {
+  display: flex;
+  list-style: none; }
+
+.languages li {
+  padding: 5px 15px;
+  font-weight: 600;
+  cursor: pointer; }
+
+.navbar {
+  border-radius: 0 !important; }
+
+.navbar-inverse .navbar-nav > li > a.active {
+  color: #fff; }
