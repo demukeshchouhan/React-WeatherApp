@@ -4,12 +4,11 @@ const OPEN_WEATHER_URL = "http://samples.openweathermap.org/data/2.5/weather?app
 module.exports= {
 	getTemp : function(location){
 	var encodeLocation = encodeURIComponent(location);
-	var reqUrl = `${OPEN_WEATHER_URL}&q=${encodeLocation}&callback=test`;
+	var reqUrl = `${OPEN_WEATHER_URL}&q=${encodeLocation}`;
 	return reqwest({
 								url : reqUrl,
-								type: "jsonp",
-								contentType: 'application/javascript',
-								crossOrigin: true,
+								type: "json",
+								crossOrigin: true
 							}).then((res)=>{
 							if(res.cod && res.message){
 								throw new Error(res.message);

@@ -20401,11 +20401,10 @@ var OPEN_WEATHER_URL = "http://samples.openweathermap.org/data/2.5/weather?appid
 module.exports = {
 	getTemp: function getTemp(location) {
 		var encodeLocation = encodeURIComponent(location);
-		var reqUrl = OPEN_WEATHER_URL + "&q=" + encodeLocation + "&callback=test";
+		var reqUrl = OPEN_WEATHER_URL + "&q=" + encodeLocation;
 		return (0, _reqwest2.default)({
 			url: reqUrl,
-			type: "jsonp",
-			contentType: 'application/javascript',
+			type: "json",
 			crossOrigin: true
 		}).then(function (res) {
 			if (res.cod && res.message) {
