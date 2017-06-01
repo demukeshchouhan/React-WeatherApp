@@ -8,9 +8,6 @@ module.exports= {
 	var reqUrl = `${OPEN_WEATHER_URL}&q=${encodeLocation}`;
 	return reqwest({
 								url : reqUrl,
-								type: 'json',
-  							method: 'GET',
-								contentType: 'application/json',
 								crossOrigin: true
 							}).then((res)=>{
 							if(res.cod && res.message){

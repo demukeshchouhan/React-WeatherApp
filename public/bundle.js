@@ -20404,9 +20404,6 @@ module.exports = {
 		var reqUrl = OPEN_WEATHER_URL + "&q=" + encodeLocation;
 		return (0, _reqwest2.default)({
 			url: reqUrl,
-			type: 'json',
-			method: 'GET',
-			contentType: 'application/json',
 			crossOrigin: true
 		}).then(function (res) {
 			if (res.cod && res.message) {
