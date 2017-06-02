@@ -10,8 +10,8 @@ app.use(function(req, res, next){
 	if(req.headers['x-forwarded-proto'] === 'https'){
 		res.redirect('http://' + req.hostname + req.url);
 	}else{
-		res.header("Access-Control-Allow-Origin", "*");
-		res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+		// res.header("Access-Control-Allow-Origin", "*");
+		// res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 		next();
 	}
 });
