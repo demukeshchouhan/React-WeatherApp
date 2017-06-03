@@ -20,6 +20,7 @@ module.exports = {
 			Example 					:  path.resolve(__dirname, "app/components/Example.jsx"),
 			ListPhoto 				:  path.resolve(__dirname, "app/components/ListPhoto.jsx"),
 			FetchAPI 					:  path.resolve(__dirname, "app/components/FetchAPI.jsx"),
+			Form 					:  path.resolve(__dirname, "app/components/Form.jsx"),
 		},
 		extensions: ['.js', '.jsx']
 	},

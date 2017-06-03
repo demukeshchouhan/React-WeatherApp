@@ -22,3 +22,6 @@
 
 .navbar-inverse .navbar-nav > li > a.active {
   color: #fff; }
+
+.listData_heading {
+  font-size: 13px; }
