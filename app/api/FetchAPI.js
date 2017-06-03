@@ -13,7 +13,7 @@ const unsplash = new Unsplash({
 
 const fetchPhoto = (input) =>{
 		return unsplash.photos
-		.searchPhotos(input, [11, 88], 1, 15)
+		.searchPhotos(input)
 		.then(toJson)
 		.then(json => {
 			console.log(json);

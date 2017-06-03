@@ -20254,7 +20254,7 @@ const unsplash = new __WEBPACK_IMPORTED_MODULE_0_unsplash_js___default.a({
 
 const fetchPhoto = (input) =>{
 		return unsplash.photos
-		.searchPhotos(input, [11, 88], 1, 15)
+		.searchPhotos(input)
 		.then(__WEBPACK_IMPORTED_MODULE_0_unsplash_js__["toJson"])
 		.then(json => {
 			console.log(json);
